@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--hello hello-->
 <html lang="en" class="no-js">
 	<head>
 		<meta charset="UTF-8" />
@@ -22,21 +23,21 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<script>
 			document.documentElement.className = "js";
-			var supportsCssVars = function () {
-				var s = document.createElement("style"),
-					support;
+            let supportsCssVars = function () {
+                let s = document.createElement("style"),
+                        support;
 
-				s.innerHTML = "root: { --tmp-var: bold; }";
-				document.head.appendChild(s);
-				support = !!(
-					window.CSS &&
-					window.CSS.supports &&
-					window.CSS.supports("font-weight", "var(--tmp-var)")
-				);
-				s.parentNode.removeChild(s);
-				return support;
-			};
-			if (!supportsCssVars())
+                s.innerHTML = "root: { --tmp-var: bold; }";
+                document.head.appendChild(s);
+                support = !!(
+                        window.CSS &&
+                        window.CSS.supports &&
+                        window.CSS.supports("font-weight", "var(--tmp-var)")
+                );
+                s.parentNode.removeChild(s);
+                return support;
+            };
+            if (!supportsCssVars())
 				alert(
 					"Please view this portfolio in a modern browser that supports CSS Variables."
 				);
