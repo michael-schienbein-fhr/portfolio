@@ -4,7 +4,7 @@ function type({
   callback,
   paragraphs,
   pIndex = 0,
-  speed = 50,
+  speed = 40,
   textIndex = 0,
   typeBreak = 2400,
   isErasing = false,

@@ -402,7 +402,7 @@ a:focus {
 	width: 100%;
 	display: inline-block;
 	min-height: 1em;
-	font-size: 1em;
+	font-size: 2em;
 }
 
 .typewriter:after {
