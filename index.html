@@ -1,183 +1,190 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="title" property="og:title" content="Michael Schienbein Portfolio" />
-		<meta property="og:type" content="Website" />
-		<meta name="image" property="og:image" content="img/thumbnails/portfolio.png" />
-		<meta name="description" property="og:description" content="Personal Software Engineering portfolio" />
-		<meta name="author" content="Michael Schienbein" />
-		<meta
-		name="keywords"
-		content="portfolio, web development, software engineering, react, node, express, python, flask, css, javascript"
-		/>
-		<title>Michael Schienbein Portfolio</title>
-		<link rel="shortcut icon" href="favicon.ico" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<script>
-			document.documentElement.className = "js";
-            let supportsCssVars = function () {
-                let s = document.createElement("style"),
-                        support;
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Michael Schienbein Portfolio" name="title" property="og:title"/>
+    <meta content="Website" property="og:type"/>
+    <meta content="img/thumbnails/portfolio.png" name="image" property="og:image"/>
+    <meta content="Personal Software Engineering portfolio" name="description" property="og:description"/>
+    <meta content="Michael Schienbein" name="author"/>
+    <meta
+            content="portfolio, web development, software engineering, react, node, express, python, flask, css, javascript"
+            name="keywords"
+    />
+    <title>Michael Schienbein Portfolio</title>
+    <link href="favicon.ico" rel="shortcut icon"/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700"
+            rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <script>
+        document.documentElement.className = "js";
+        let supportsCssVars = function () {
+            let s = document.createElement("style"),
+                    support;
 
-                s.innerHTML = "root: { --tmp-var: bold; }";
-                document.head.appendChild(s);
-                support = !!(
-                        window.CSS &&
-                        window.CSS.supports &&
-                        window.CSS.supports("font-weight", "var(--tmp-var)")
-                );
-                s.parentNode.removeChild(s);
-                return support;
-            };
-            if (!supportsCssVars())
-				alert(
-					"Please view this portfolio in a modern browser that supports CSS Variables."
-				);
-		</script>
-	</head>
-	<body class="loading">
-		<main>
-			<div class="morph-wrap">
-				<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
-					<path
-						d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"
-					/>
-				</svg>
-			</div>
-			<div class="content content--fixed">
-				<header class="header">
-					<a data-scroll href="#"
-						><h1 class="header__title">Michael Schienbein Portfolio</h1></a
-					>
-				</header>
-				<nav class="demos">
-					<a data-scroll class="demo hide" href="#">Home</a>
-					<a data-scroll class="demo hide" href="#about">About</a>
-					<a data-scroll class="demo hide" href="#portfolio">Portfolio</a>
-					<a data-scroll class="demo" href="/cv/MichaelSchienbeinResume.pdf">Resume</a>
-					<a
-						data-scroll
-						class="demo"
-						href="https://www.linkedin.com/in/schienbein/"
-						>Linkedin</a
-					>
-					<a data-scroll class="demo" href="http://www.github.com/mschien/"
-						>Github</a
-					>
-					<a data-scroll class="demo" href="mailto:m@schienbein.dev"
-						>Contact</a
-					>
-				</nav>
-				<div class="deco deco--title">Software Engineer</div>
-			</div>
-			<section id="home" class="content-wrap">
-                <div>
-                    <img id="me" src="img/me.webp"/>
-                </div>
-				<h1 class="content__home">Hey, I'm Michael.</h1>
-					<div
-						class="typewriter content__subtitle"
-						data-steps="I'm a Software Engineer looking to fill a role working remotely.|I Consider myself to be a Full-Stack Developer.|Here you can check out some of my work."
-						data-repeat="data-repeat"
-						data-erase="data-erase"
-					></div>
-			</section>
-			<section id="about" class="content content-wrap">
-				<div class="content__about">
-                    <p>
-                        My name is Michael, I'm a software engineer skilled in full-stack development.
-                        I have experience building RESTful APIs using both Node.js and Python, working with databases and ready-built APIs, and making responsive frontend UIs with React.js.
-                    </p>
-					<p>
-						I started a career as a stage technician at the age of 18, dealing with the technical aspects of stage productions and live events. Over the 10 years I worked as a stage tech, I gained the ability to work under pressure and handle an array of complicated client requests. Eventually, I decided I'd rather pursue my passion of working with technology, so I began to teach myself software engineering and found joy in the process.
-					</p>
-					<p>
-						I'm now pursuing a career as a Software Engineer. I'd like a role where I can continue to challenge myself and learn new skills, all while working with knowledgeable teams to create amazing applications.
-					</p>
-				</div>
-			</section>
-			<section id="portfolio" class="content-wrap">
-				<div class="content content--layout content--layout-2">
-					<img class="content__img redirect4" src="img/4.png" alt="Some image" />
-					<h3 class="content__title redirect4">Eyepatch</h3>
-					<p class="content__author redirect4">
-						  Node Express Postgresql Websockets React
-					</p>
-					<p class="content__desc redirect4">
-						Share your YouTube watching experience with friends
-					</p>
-					<a href="https://github.com/mschien/eyepatch-client" class="content__link"
-						>Source</a
-					>
-				</div>
-			</section>
-			<section class="content-wrap">
-				<div class="content content--layout content--layout-2">
-					<img class="content__img redirect1" src="img/1.jpg" alt="Some image" />
-					<h3 class="content__title redirect1">KEYmix</h3>
-					<p class="content__author redirect1">
-						Python Flask Javascript Postgresql Bulma
-					</p>
-					<p class="content__desc redirect1">
-						Intelligent Spotify recommendation engine.
-					</p>
-					<a href="https://github.com/mschien/keymix" class="content__link"
-						>Source</a
-					>
-				</div>
-			</section>
-			<div class="content-wrap">
-				<div class="content content--layout content--layout-3">
-					<img class="content__img redirect2" src="img/2.jpg" alt="Some image" />
-					<h3 class="content__title redirect2">Boggle</h3>
-					<p class="content__author redirect2">Jinja Bootstrap Python Flask</p>
-					<p class="content__desc redirect2">
-						Flask based remake of the classic game.
-					</p>
-					<a href="https://github.com/mschien/flaskBoggle" class="content__link"
-						>Source</a
-					>
-				</div>
-			</div>
-			<div class="content-wrap">
-				<div class="content content--layout content--layout-4">
-					<img class="content__img redirect3" src="img/3.png" alt="Some image" />
-					<h3 class="content__title redirect3">CardMatch</h3>
-					<p class="content__author redirect3">HTML5 CSS Javascript</p>
-					<p class="content__desc redirect3">
-						Super Mario Bros. 3 themed matching game.
-					</p>
-					<a
-						href="https://github.com/mschien/memoryGame/tree/grid"
-						class="content__link"
-						>Source</a
-					>
-				</div>
-			</div>
-			<a data-scroll class="pagetop" href="#">Top</a>
-			<section class="content content--related"></section>
-		</main>
-		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-		<script
-			src="https://code.jquery.com/jquery-3.6.0.min.js"
-			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			crossorigin="anonymous"
-		></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/anime.min.js"></script>
-		<script src="js/scrollMonitor.js"></script>
-		<script src="js/typewriter.js"></script>
-		<script src="js/listeners.js"></script>
-		<script src="js/app.js"></script>
-		<script>
-			let scroll = new SmoothScroll('a[href*="#"]');
-		</script>
-	</body>
+            s.innerHTML = "root: { --tmp-var: bold; }";
+            document.head.appendChild(s);
+            support = !!(
+                    window.CSS &&
+                    window.CSS.supports &&
+                    window.CSS.supports("font-weight", "var(--tmp-var)")
+            );
+            s.parentNode.removeChild(s);
+            return support;
+        };
+        if (!supportsCssVars())
+            alert(
+                    "Please view this portfolio in a modern browser that supports CSS Variables."
+            );
+    </script>
+</head>
+<body class="loading">
+    <main>
+        <div class="morph-wrap">
+            <svg class="morph" height="770" viewBox="0 0 1400 770" width="1400">
+                <path
+                        d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"
+                />
+            </svg>
+        </div>
+        <div class="content content--fixed">
+            <header class="header">
+                <a data-scroll href="#"
+                ><h1 class="header__title">Michael Schienbein Portfolio</h1></a
+                >
+            </header>
+            <nav class="demos">
+                <a class="demo hide" data-scroll href="#">Home</a>
+                <a class="demo hide" data-scroll href="#about">About</a>
+                <a class="demo hide" data-scroll href="#portfolio">Portfolio</a>
+                <a class="demo" data-scroll href="/cv/MichaelSchienbeinResume.pdf">Resume</a>
+                <a
+                        class="demo"
+                        data-scroll
+                        href="https://www.linkedin.com/in/schienbein/"
+                >Linkedin</a
+                >
+                <a class="demo" data-scroll href="http://www.github.com/mschien/"
+                >Github</a
+                >
+                <a class="demo" data-scroll href="mailto:m@schienbein.dev"
+                >Contact</a
+                >
+            </nav>
+            <div class="deco deco--title">Software Engineer</div>
+        </div>
+        <section class="content-wrap" id="home">
+            <div>
+                <img alt="A portrait of Michael Schienbein" id="me" src="img/me.webp"/>
+            </div>
+            <h1 class="content__home">Hey, I'm Michael.</h1>
+            <div
+                    class="typewriter content__subtitle"
+                    data-erase="data-erase"
+                    data-repeat="data-repeat"
+                    data-steps="I'm a Software Engineer looking to fill a role working remotely.|I Consider myself to be a Full-Stack Developer.|Here you can check out some of my work."
+            ></div>
+        </section>
+        <section class="content content-wrap" id="about">
+            <div class="content__about">
+                <p>
+                    My name is Michael, I'm a software engineer skilled in full-stack development.
+                    I have experience building RESTful APIs using both Node.js and Python, working with databases and
+                    ready-built APIs, and making responsive frontend UIs with React.js.
+                </p>
+                <p>
+                    I started a career as a stage technician at the age of 18, dealing with the technical aspects of
+                    stage productions and live events. Over the 10 years I worked as a stage tech, I gained the ability
+                    to work under pressure and handle an array of complicated client requests. Eventually, I decided I'd
+                    rather pursue my passion of working with technology, so I began to teach myself software engineering
+                    and found joy in the process.
+                </p>
+                <p>
+                    I'm now pursuing a career as a Software Engineer. I'd like a role where I can continue to challenge
+                    myself and learn new skills, all while working with knowledgeable teams to create amazing
+                    applications.
+                </p>
+            </div>
+        </section>
+        <section class="content-wrap" id="portfolio">
+            <div class="content content--layout content--layout-2">
+                <img alt="Some image" class="content__img redirect4" src="img/4.png"/>
+                <h3 class="content__title redirect4">Eyepatch</h3>
+                <p class="content__author redirect4">
+                    Node Express Postgresql Websockets React
+                </p>
+                <p class="content__desc redirect4">
+                    Share your YouTube watching experience with friends
+                </p>
+                <a class="content__link" href="https://github.com/mschien/eyepatch-client"
+                >Source</a
+                >
+            </div>
+        </section>
+        <section class="content-wrap">
+            <div class="content content--layout content--layout-2">
+                <img alt="Some image" class="content__img redirect1" src="img/1.jpg"/>
+                <h3 class="content__title redirect1">KEYmix</h3>
+                <p class="content__author redirect1">
+                    Python Flask Javascript Postgresql Bulma
+                </p>
+                <p class="content__desc redirect1">
+                    Intelligent Spotify recommendation engine.
+                </p>
+                <a class="content__link" href="https://github.com/mschien/keymix"
+                >Source</a
+                >
+            </div>
+        </section>
+        <div class="content-wrap">
+            <div class="content content--layout content--layout-3">
+                <img alt="Some image" class="content__img redirect2" src="img/2.jpg"/>
+                <h3 class="content__title redirect2">Boggle</h3>
+                <p class="content__author redirect2">Jinja Bootstrap Python Flask</p>
+                <p class="content__desc redirect2">
+                    Flask based remake of the classic game.
+                </p>
+                <a class="content__link" href="https://github.com/mschien/flaskBoggle"
+                >Source</a
+                >
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="content content--layout content--layout-4">
+                <img alt="Some image" class="content__img redirect3" src="img/3.png"/>
+                <h3 class="content__title redirect3">CardMatch</h3>
+                <p class="content__author redirect3">HTML5 CSS Javascript</p>
+                <p class="content__desc redirect3">
+                    Super Mario Bros. 3 themed matching game.
+                </p>
+                <a
+                        class="content__link"
+                        href="https://github.com/mschien/memoryGame/tree/grid"
+                >Source</a
+                >
+            </div>
+        </div>
+        <a class="pagetop" data-scroll href="#">Top</a>
+        <section class="content content--related"></section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+            crossorigin="anonymous"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="js/listeners.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        let scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
 </html>
